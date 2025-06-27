@@ -1,0 +1,20 @@
+/**
+ * Arquivo CSS principal da aplicação Laravel.
+ * 
+ * Importa o Tailwind CSS e define configurações de tema
+ * personalizadas para o projeto.
+ */
+
+@import 'tailwindcss';
+
+/* Configuração de fontes e arquivos a serem observados pelo Tailwind */
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Tema personalizado da aplicação */
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
